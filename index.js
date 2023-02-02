@@ -1,5 +1,5 @@
 
-var randomNumber1 = (Math.floor(Math.random() * 6) + 1; //This will give a full number between 1-6
+var randomNumber1 = (Math.floor(Math.random() * 6) + 1); //This will give a full number between 1-6
 // If not sure what the code is printing, copy paste it into the console on the web of the desktop version of this file and see 
 //what the values are.
 
@@ -34,3 +34,17 @@ var randomNumber2 = (MAth.floor(MAth.random)() * 6) + 1;
 var randomImageSource2 = "images/dice" + randomNumber2 + ".png"; //we don't have to write each line again.
 
 document.querySelectorAll("img")[1].setAttribute("src", randomImageSource2) //two lines in one. 
+//Now both dices will generate random numbers.
+
+//Now we can change the inner HTML of the title depending on the result of the dice roll: (selector, because we only have one attribute to change)
+
+if (randomNumber1 > randomNumber2) {
+    document.querySelector("h1").innerHTML = "Player 1 Wins!"
+}else if (randomNumber2 > randomNumber1) {
+    document.querySelector("h1").innerHTML = "PLayer 2 Wins!"
+}else {
+    document.querySelector("h1").innerHTML = "Draw!"
+}
+
+//Could use getElementById or getElementByTagName instead of querySelector/All etc. Also, some of the code above can be shortened or
+//put on different lines / or merged on one line etc.
