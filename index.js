@@ -1,20 +1,23 @@
-var randomNumber1 = (Math.floor(Math.random() * 6) + 1); 
+var randomNumber1 = (Math.floor(Math.random() * 6) + 1); //Simpy a random number for player 1.
 // If not sure what the code is printing, copy paste it into the console on the web of the desktop version of this file and see 
 //what the values are.
 
 //So we can use contactenation to add this number to the ed of the string.
 
-var randomDiceImage = "dice" + randomNumber1 +".png"; //this is so clean. Imagine, and then code it. Create it in your head and code it. 
+var randomDiceImage = "dice" + randomNumber1 +".png"; //THis is simply a way of grabbing the right image.
+//this is so clean. Imagine, and then code it. Create it in your head and code it. 
 //for example "dice3.png". You name the var yourself every time.
 
-var randomImageSource = "images/" + randomDiceImage; //this will give something like 'images/dice1.png' etc.
+var randomImageSource = "images/" + randomDiceImage; //This is simply how/where to access that image.
+//this will give something like 'images/dice1.png' etc.
 
 //So now we can change the src attribute of our image element:
 
 var image1 = document.querySelectorAll("img")[0];
 
 //(first attribute below is the name you want to change, the one we want to change is called src.)(Second parameter/input is what we want to change it to)
-image1.setAttribute("Src", randomImageSource); //This will keep giving us a random number now.
+image1.setAttribute("Src", randomImageSource); //This simply replaces the initial image with the new random image.
+//This will keep giving us a random number now.
 
 //So we do the same thing for the second
 //image element:
